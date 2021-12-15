@@ -4,6 +4,8 @@
 if [ "x$MC_FIRST" = "x" ]
 then
   httpd
+  mkdir /run/php-fpm
+  php-fpm
   multichaind chain1
 fi
 
