@@ -8,7 +8,7 @@ RUN yum -y upgrade \
     && yum -y update \
     && yum -y install epel-release \
     && yum -y update \
-    && yum -y install wget git httpd php \
+    && yum -y install wget git httpd php php-json \
     \
     && wget https://www.multichain.com/download/multichain-latest.tar.gz \
     && cd / && tar zxvf multichain-latest.tar.gz \
